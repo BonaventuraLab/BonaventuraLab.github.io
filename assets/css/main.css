@@ -140,18 +140,57 @@ p{margin:.5rem 0 1rem}
 
 /* Main and hero */
 
-main{min-height:60vh}
-.hero{max-width:var(--max);margin:auto;padding:100px 28px 95px;display:grid;grid-template-columns:1.1fr .9fr;gap:60px;align-items:center}
-.eyebrow{font-size:.7rem;letter-spacing:.16em;font-weight:700;color:var(--mustard);text-transform:uppercase;margin:0 0 15px}
-.hero h1{max-width:720px}
-.hero-lead{font-size:1.15rem;line-height:1.8;color:#56646c;max-width:650px}
-.button-link{display:inline-flex;align-items:center;gap:25px;margin-top:22px;background:var(--accent-dark);color:white;padding:13px 19px;font-weight:600;font-size:.9rem}
-.button-link:hover{text-decoration:none;background:#2d6658;color:white}
-.hero-visual{min-height:360px;background:linear-gradient(145deg,#172b35,#397b68 65%,#79a96b);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
-.hero-visual:before,.hero-visual:after{content:'';position:absolute;border:1px solid rgba(255,255,255,.25);border-radius:50%;width:360px;height:360px}
-.hero-visual:after{width:250px;height:250px}
-.hero-visual-inner{position:relative;z-index:1;color:white;display:flex;flex-direction:column;align-items:center;gap:14px;font-size:.72rem;letter-spacing:.2em;font-weight:700}
-.visual-line{width:1px;height:35px;background:rgba(255,255,255,.6)}
+main { min-height: 60vh; }
+
+/* --- NEW HERO VISUAL LAYOUT --- */
+.hero-visual-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr); /* Tighter split */
+  gap: 36px;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.hero-content .eyebrow {
+  margin-bottom: 12px; /* Tighter spacing */
+}
+
+.hero-visual-layout h1 {
+  margin-top: 6px;
+  margin-bottom: 12px;
+  line-height: 1.12;
+  max-width: 18ch; /* Ensures 2-3 crisp lines */
+}
+
+.hero-visual-layout .hero-lead {
+  margin-bottom: 18px;
+  max-width: 58ch; /* Prevents line length from getting too wide */
+}
+
+.hero-visual-layout .button-link {
+  margin-top: 0; /* Alignment fix */
+}
+
+.hero-media img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px; /* Gives the diagram soft edges */
+}
+
+/* --- STACK ON MOBILE --- */
+@media (max-width: 860px) {
+  .hero-visual-layout {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+}
+
+/* --- RETAINED EXISTING STYLES --- */
+.eyebrow { font-size: .7rem; letter-spacing: .16em; font-weight: 700; color: var(--mustard); text-transform: uppercase; margin: 0; }
+.button-link { display: inline-flex; align-items: center; gap: 25px; background: var(--accent-dark); color: white; padding: 13px 19px; font-weight: 600; font-size: .9rem; }
+.button-link:hover { text-decoration: none; background: #2d6658; color: white; }
 
 /* Sections */
 
