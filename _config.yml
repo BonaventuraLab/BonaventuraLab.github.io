@@ -1,0 +1,40 @@
+title: Bonaventura Lab
+description: Research on neurotransmitter systems, neural circuits, and behavior.
+url: "https://bonaventuralab.github.io"
+baseurl: ""
+lang: en
+markdown: kramdown
+permalink: /news/:year/:month/:day/:title/
+timezone: Europe/Madrid
+
+collections:
+  research:
+    output: true
+    permalink: /research/:name/
+  people:
+    output: true
+    permalink: /people/:name/
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: post
+  - scope:
+      path: ""
+      type: "research"
+    values:
+      layout: page
+  - scope:
+      path: ""
+      type: "people"
+    values:
+      layout: person
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - node_modules

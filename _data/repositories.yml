@@ -1,0 +1,12 @@
+- name: Fiber photometry
+  type: Software · Analysis
+  description: Scripts and tools for fiber photometry data analysis.
+  language: MATLAB
+  url: https://github.com/BonaventuraLab/fiber-photometry
+  doi:
+- name: Behavioral analysis
+  type: Software · Analysis
+  description: Behavioral analysis resources developed by the lab. Update this description to match the repository contents.
+  language:
+  url: https://github.com/BonaventuraLab/behavior
+  doi:

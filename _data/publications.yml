@@ -1,0 +1,12 @@
+# Add verified publications here. One entry per paper.
+# DOI should be the identifier only, e.g. 10.1016/j.neuropharm.2025.000000
+- year: 2026
+  title: "Add a selected publication title"
+  authors: "Add the complete author list"
+  journal: "Journal name"
+  volume:
+  pages:
+  doi:
+  pubmed:
+  pdf:
+  code:

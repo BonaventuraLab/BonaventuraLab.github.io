@@ -1,0 +1,12 @@
+---
+layout: default
+---
+<section class="page-hero">
+  <p class="eyebrow">{{ page.date | date: "%d %B %Y" }}{% if page.category %} · {{ page.category }}{% endif %}</p>
+  <h1>{{ page.title }}</h1>
+  {% if page.subtitle %}<p class="page-intro">{{ page.subtitle }}</p>{% endif %}
+</section>
+<article class="content-wrap prose post-content">
+  {{ content }}
+  <p><a class="text-link" href="{{ '/news/' | relative_url }}">← Back to news</a></p>
+</article>

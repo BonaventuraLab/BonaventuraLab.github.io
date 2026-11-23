@@ -1,0 +1,10 @@
+# Replace these examples with current lab members. Use one entry per person.
+# Add portrait files to assets/images/ and set photo: /assets/images/filename.jpg
+- name: Jordi Bonaventura
+  initials: JB
+  role: Principal Investigator
+  order: 1
+  bio: Associate Professor at the University of Barcelona. Research interests include neurotransmitter systems, receptor pharmacology, pain, and motivated behavior.
+  orcid: https://orcid.org/
+  scholar:
+  website:
