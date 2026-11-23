@@ -6,7 +6,7 @@ intro: Meet the researchers and students behind our work.
 ---
 
 <div class="people-grid">
-{% assign members = site.data.members | sort: "order" %}
+{% assign members = site.data.members.members | sort: "order" %}
 {% for member in members %}
   <article class="person-card">
     {% if member.photo %}
