@@ -1,4 +1,3 @@
-
 ---
 layout: page
 title: People
@@ -20,11 +19,10 @@ intro: Meet the researchers and students behind our work.
     {% if member.bio %}
       <details class="person-bio">
         <summary>
-          <span class="bio-preview">{{ member.bio }}</span>
+          <span class="bio-text">{{ member.bio }}</span>
           <span class="bio-toggle bio-more">Read more ↓</span>
           <span class="bio-toggle bio-less">Show less ↑</span>
         </summary>
-        <div class="bio-full">{{ member.bio }}</div>
       </details>
     {% endif %}
     <div class="person-links">
@@ -54,11 +52,10 @@ We are grateful to all former members and collaborators who have contributed to 
     {% if member.bio %}
       <details class="person-bio">
         <summary>
-          <span class="bio-preview">{{ member.bio }}</span>
+          <span class="bio-text">{{ member.bio }}</span>
           <span class="bio-toggle bio-more">Read more ↓</span>
           <span class="bio-toggle bio-less">Show less ↑</span>
         </summary>
-        <div class="bio-full">{{ member.bio }}</div>
       </details>
     {% endif %}
     <div class="person-links">
