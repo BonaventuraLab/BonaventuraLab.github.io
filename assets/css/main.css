@@ -369,6 +369,7 @@ main { min-height: 60vh; }
 }
 
 
+
 /* Expandable biographies */
 
 .person-bio {
@@ -387,11 +388,16 @@ main { min-height: 60vh; }
   display: none;
 }
 
-.person-bio .bio-preview {
+.person-bio .bio-text {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
   overflow: hidden;
+}
+
+.person-bio[open] .bio-text {
+  display: block;
+  overflow: visible;
 }
 
 .person-bio .bio-toggle {
@@ -402,8 +408,10 @@ main { min-height: 60vh; }
   font-weight: 700;
 }
 
-.person-bio .bio-less,
-.person-bio[open] .bio-preview,
+.person-bio .bio-less {
+  display: none;
+}
+
 .person-bio[open] .bio-more {
   display: none;
 }
@@ -412,12 +420,3 @@ main { min-height: 60vh; }
   display: inline-block;
 }
 
-.person-bio .bio-full {
-  margin-top: 8px;
-  animation: bio-expand 0.2s ease;
-}
-
-@keyframes bio-expand {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
