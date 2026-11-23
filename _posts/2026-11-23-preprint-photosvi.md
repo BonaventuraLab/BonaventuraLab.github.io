@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "<span style='color: #f07855;'>New preprint</span>: Disentangling tonic and phasic dopamine in fiber photometry"
+title: "<span style='color: #f07855;'>New preprint:</span> Disentangling tonic and phasic dopamine in fiber photometry"
 date: 2026-11-23
 category: Publications
 ---
