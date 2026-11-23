@@ -5,4 +5,4 @@ date: 2026-11-22
 category: Lab update
 ---
 
-This is a starter news post. Replace this text with a genuine lab update, or delete this file before publishing.
+Our website is currently under construction. We are working on adding information about our research, team, publications, and resources. Please check back soon for updates!
