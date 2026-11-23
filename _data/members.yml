@@ -8,6 +8,7 @@ members:
     scholar: https://scholar.google.com/citations?user=x0hVzyQAAAAJ&hl=ca
     website: 
     strava: https://www.strava.com/athletes/184578692
+    phto:
 
   - name: Arianna Rizzo
     initials: AR
@@ -22,19 +23,23 @@ members:
     initials: AE
     role: PhD Student
     order: 3
-    bio:
+    bio: Amelie has a BSc in biology from Saint Peter’s University in Jersey City and a Master's in neuroscience with molecular neurobiology from Stockholm University. In the Bonaventura lab, she is doing her PhD, currently exploring the neural circuitry involved in chronic pain and the role of opioids. Amelie is mostly performing fiber photometry, opto- and chemogenetics to decipher neural circuitry. Outside the lab, Amelie enjoys doing sports and baking.
     orcid: https://orcid.org/0009-0008-9972-8187
     scholar:
     website:
+    strava: https://www.strava.com/athletes/74485928
+    photo: /assets/images/AE-photo.jpeg
 
-  - name: Maria Zelai-Garçon Poca
+  - name: Maria Zelai Garçon-Poca
     initials: MZ
     role: PhD Student
     order: 4
-    bio:
+    bio: Zelai holds a Bachelor's Degree in Pharmacy from the University of Barcelona, with a specialization in Industrial Pharmacy and Pharmaceutical Research. She is particularly interested in the mechanisms underlying pain-related mood changes, how chronic pain affects brain circuits and behaviour, and the role of dopamine and opioid signalling in these processes. Outside the lab what she most enjoys is a good breakfast after an early morning rowing session. 
     orcid: https://orcid.org/0000-0002-5709-7531
     scholar:
     website:
+     photo: /assets/images/ZG-photo.png
+
 
 alumni:
   - name: Cassandre Corvo
