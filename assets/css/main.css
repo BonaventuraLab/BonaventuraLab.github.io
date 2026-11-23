@@ -28,16 +28,94 @@ p{margin:.5rem 0 1rem}
 
 /* Header */
 
-.site-header{border-bottom:1px solid var(--line);background:#fff;position:sticky;top:0;z-index:20}
-.header-inner{max-width:var(--max);margin:auto;padding:17px 28px;display:flex;align-items:center;justify-content:space-between;gap:25px}
-.brand{display:flex;flex-direction:column;color:var(--ink);line-height:1.25}
-.brand:hover{text-decoration:none}
-.brand-name{font-size:1.15rem;font-weight:800;letter-spacing:.04em}
-.brand-subtitle{font-size:.62rem;letter-spacing:.12em;color:var(--muted);margin-top:5px}
-.site-nav{display:flex;align-items:center;gap:clamp(12px,2vw,27px)}
-.site-nav a{font-size:.83rem;color:#42515a;font-weight:600}
-.site-nav a[aria-current=page]{color:var(--accent-dark)}
-.menu-toggle{display:none;background:none;border:1px solid var(--line);padding:7px 12px;border-radius:4px;color:var(--ink)}
+.site-header {
+  border-bottom: 1px solid var(--line);
+  background: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 20;
+}
+
+.header-inner {
+  width: 100%;
+  max-width: 1500px;
+  margin: auto;
+  padding: 20px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  flex: 0 0 auto;
+  color: var(--ink);
+  line-height: 1.25;
+}
+
+.brand:hover {
+  text-decoration: none;
+}
+
+.site-logo {
+  display: block;
+  width: 280px;
+  max-height: 90px;
+  height: auto;
+  object-fit: contain;
+}
+
+.site-nav {
+  display: flex;
+  align-items: center;
+  gap: clamp(14px, 2vw, 30px);
+  margin-left: auto;
+}
+
+.site-nav a {
+  font-size: 0.9rem;
+  color: #42515a;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.site-nav a[aria-current=page] {
+  color: var(--accent-dark);
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: 1px solid var(--line);
+  padding: 7px 12px;
+  border-radius: 4px;
+  color: var(--ink);
+}
+
+@media (max-width: 900px) {
+  .header-inner {
+    padding: 16px 24px;
+    gap: 16px;
+  }
+
+  .site-logo {
+    width: 230px;
+    max-height: 75px;
+  }
+}
+
+@media (max-width: 700px) {
+  .header-inner {
+    padding: 14px 20px;
+  }
+
+  .site-logo {
+    width: 190px;
+    max-height: 65px;
+  }
+}
 
 /* Main and hero */
 
