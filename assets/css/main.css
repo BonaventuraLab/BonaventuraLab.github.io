@@ -27,6 +27,7 @@ h3{font-size:1.25rem;margin:.5rem 0 .65rem}
 p{margin:.5rem 0 1rem}
 
 /* Header */
+
 /* Header */
 
 .site-header {
@@ -38,9 +39,9 @@ p{margin:.5rem 0 1rem}
 }
 
 .header-inner {
-  max-width: 1500px;
+  max-width: var(--max);
   margin: auto;
-  padding: 22px 40px;
+  padding: 22px 28px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -123,20 +124,6 @@ p{margin:.5rem 0 1rem}
 
   .site-nav a {
     font-size: 0.85rem;
-  }
-}
-
-@media (max-width: 900px) {
-.header-inner {
-  max-width: var(--max);
-  margin: auto;
-  padding: 22px 28px;  .header-inner {
-    padding: 14px 20px;
-  }
-
-  .site-logo {
-    width: 190px;
-    max-height: 65px;
   }
 }
 
