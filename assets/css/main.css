@@ -155,7 +155,7 @@ main{min-height:60vh}
 
 /* Sections */
 
-.section{padding:80px max(28px,calc((100% - var(--max))/2))}
+.section{padding:44px max(28px,calc((100% - var(--max))/2))}
 .section-intro{display:grid;grid-template-columns:.8fr 1.2fr;gap:70px;border-top:1px solid var(--line)}
 .section-heading h2{max-width:420px}
 .section-copy{max-width:690px;color:#58666e}
