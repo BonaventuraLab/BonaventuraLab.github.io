@@ -23,6 +23,7 @@ intro: Selected publications from the Bonaventura Lab and our collaborators.
       {% if pub.pubmed %}<a href="{{ pub.pubmed }}">PubMed</a>{% endif %}
       {% if pub.pdf %}<a href="{{ pub.pdf }}">PDF</a>{% endif %}
       {% if pub.code %}<a href="{{ pub.code }}">Code</a>{% endif %}
+      {% if pub.type %}  <span class="publication-type">{{ pub.type }}</span>{% endif %}
     </div>
   </article>
 {% endfor %}
