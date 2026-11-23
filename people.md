@@ -25,11 +25,27 @@ intro: Meet the researchers and students behind our work.
         </summary>
       </details>
     {% endif %}
-    <div class="person-links">
-      {% if member.orcid %}<a href="{{ member.orcid }}">ORCID</a>{% endif %}
-      {% if member.scholar %}<a href="{{ member.scholar }}">Google Scholar</a>{% endif %}
-      {% if member.website %}<a href="{{ member.website }}">Website</a>{% endif %}
-    </div>
+<div class="person-links">
+  {% if member.orcid %}
+    <a href="{{ member.orcid }}" class="icon-link" target="_blank" rel="noopener noreferrer" aria-label="ORCID profile" title="ORCID">
+      <img src="{{ '/assets/images/orcid-logo.svg' | relative_url }}" alt="">
+    </a>
+  {% endif %}
+
+  {% if member.scholar %}
+    <a href="{{ member.scholar }}">Google Scholar</a>
+  {% endif %}
+
+  {% if member.website %}
+    <a href="{{ member.website }}">Website</a>
+  {% endif %}
+
+  {% if member.strava %}
+    <a href="{{ member.strava }}" class="icon-link" target="_blank" rel="noopener noreferrer" aria-label="Strava profile" title="Strava">
+      <img src="{{ '/assets/images/strava-logo.svg' | relative_url }}" alt="">
+    </a>
+  {% endif %}
+</div>
   </article>
 {% endfor %}
 </div>
@@ -58,11 +74,27 @@ We are grateful to all former members and collaborators who have contributed to 
         </summary>
       </details>
     {% endif %}
-    <div class="person-links">
-      {% if member.orcid %}<a href="{{ member.orcid }}">ORCID</a>{% endif %}
-      {% if member.scholar %}<a href="{{ member.scholar }}">Google Scholar</a>{% endif %}
-      {% if member.website %}<a href="{{ member.website }}">Website</a>{% endif %}
-    </div>
+<div class="person-links">
+  {% if member.orcid %}
+    <a href="{{ member.orcid }}" class="icon-link" target="_blank" rel="noopener noreferrer" aria-label="ORCID profile" title="ORCID">
+      <img src="{{ '/assets/images/orcid-logo.svg' | relative_url }}" alt="">
+    </a>
+  {% endif %}
+
+  {% if member.scholar %}
+    <a href="{{ member.scholar }}">Google Scholar</a>
+  {% endif %}
+
+  {% if member.website %}
+    <a href="{{ member.website }}">Website</a>
+  {% endif %}
+
+  {% if member.strava %}
+    <a href="{{ member.strava }}" class="icon-link" target="_blank" rel="noopener noreferrer" aria-label="Strava profile" title="Strava">
+      <img src="{{ '/assets/images/strava-logo.svg' | relative_url }}" alt="">
+    </a>
+  {% endif %}
+</div>
   </article>
 {% endfor %}
 </div>
