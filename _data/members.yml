@@ -1,10 +1,72 @@
-# Replace these examples with current lab members. Use one entry per person.
-# Add portrait files to assets/images/ and set photo: /assets/images/filename.jpg
+# Current lab members
 - name: Jordi Bonaventura
   initials: JB
   role: Principal Investigator
   order: 1
   bio: Associate Professor at the University of Barcelona. Research interests include neurotransmitter systems, receptor pharmacology, pain, and motivated behavior.
-  orcid: https://orcid.org/
+  orcid: https://orcid.org/0000-0002-4745-0151
+  scholar: https://scholar.google.com/citations?user=x0hVzyQAAAAJ&hl=ca
+  website: https://bonaventuralab.github.io/
+  #photo: /assets/images/filename.jpg
+
+- name: Arianna Rizzo
+  initials: AR
+  role: PhD Student
+  order: 2
+  bio:
+  orcid: https://orcid.org/0000-0003-4404-194X
   scholar:
   website:
+  #photo:
+
+- name: Amelie Essmann
+  initials: AE
+  role: PhD Student
+  order: 3
+  bio:
+  orcid: https://orcid.org/0009-0008-9972-8187
+  scholar:
+  website:
+  #photo:
+
+- name: Maria Zelai-Garçon Poca
+  initials: MZ
+  role: PhD Student
+  order: 4
+  bio:
+  orcid: https://orcid.org/0000-0002-5709-7531
+  scholar:
+  website:
+  #photo:
+
+# Alumni
+alumni:
+  - name: Cassandre Corvo
+    initials: CC
+    role: Former Postdoctoral Researcher
+    order: 1
+    bio:
+    orcid:
+    scholar:
+    website:
+    #photo:
+
+  - name: Caitlin Crook
+    initials: CC
+    role: Former Visiting PhD Fellow
+    order: 2
+    bio:
+    orcid:
+    scholar:
+    website:
+    #photo:
+
+  - name: Adriana de Souza
+    initials: AdS
+    role: Former Visiting PhD Fellow
+    order: 3
+    bio:
+    orcid:
+    scholar:
+    website:
+    #photo:
