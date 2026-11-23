@@ -32,9 +32,11 @@ intro: Meet the researchers and students behind our work.
     </a>
   {% endif %}
 
-  {% if member.scholar %}
-    <a href="{{ member.scholar }}">Google Scholar</a>
-  {% endif %}
+{% if member.scholar %}
+  <a href="{{ member.scholar }}" class="icon-link" target="_blank" rel="noopener noreferrer" aria-label="Google Scholar profile" title="Google Scholar">
+    <img src="{{ '/assets/images/gscholar-logo.svg' | relative_url }}" alt="">
+  </a>
+{% endif %}
 
   {% if member.website %}
     <a href="{{ member.website }}">Website</a>
@@ -81,9 +83,11 @@ We are grateful to all former members and collaborators who have contributed to 
     </a>
   {% endif %}
 
-  {% if member.scholar %}
-    <a href="{{ member.scholar }}">Google Scholar</a>
-  {% endif %}
+{% if member.scholar %}
+  <a href="{{ member.scholar }}" class="icon-link" target="_blank" rel="noopener noreferrer" aria-label="Google Scholar profile" title="Google Scholar">
+    <img src="{{ '/assets/images/gscholar-logo.svg' | relative_url }}" alt="">
+  </a>
+{% endif %}
 
   {% if member.website %}
     <a href="{{ member.website }}">Website</a>
