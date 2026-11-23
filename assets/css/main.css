@@ -217,6 +217,19 @@ main{min-height:60vh}
 .publication h3{margin:0 0 7px}
 .publication p{margin:3px 0;font-size:.9rem}
 .year-heading{padding-top:15px;border-bottom:1px solid var(--line);padding-bottom:10px}
+.publication-type {
+  display: inline-block;
+  margin-left: 8px;
+  padding: 3px 8px;
+  border: 1px solid #f07855;
+  border-radius: 3px;
+  color: #f07855;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
 
 /* News and resources */
 
