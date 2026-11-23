@@ -1,12 +1,194 @@
-# Add verified publications here. One entry per paper.
-# DOI should be the identifier only, e.g. 10.1016/j.neuropharm.2025.000000
+
+# Selected publications
+# DOI is the identifier only. PubMed contains the PMID.
+
 - year: 2026
-  title: "Add a selected publication title"
-  authors: "Add the complete author list"
-  journal: "Journal name"
-  volume:
-  pages:
-  doi:
-  pubmed:
-  pdf:
-  code:
+  title: "Molecular snapshots confirm ketamine’s opioid nature"
+  authors: "J Bonaventura, M Michaelides"
+  journal: "Nature Structural & Molecular Biology"
+  volume: "33 (9)"
+  pages: "1273–1274"
+  doi: "10.1038/s41594-026-01874-9"
+  pubmed: "42637972"
+  type: "News & Views"
+  
+- year: 2026
+  title: "A µ-opioid receptor superagonist analgesic with minimal adverse effects"
+  authors: "JL Gomez, EN Ventriglia, ZJ Frangos, A Sulima, MJ Robertson, MD Sacco, et al., J Bonaventura, Y Shaham, V Zachariou, MH Baumann, G Skiniotis, KC Rice, M Michaelides"
+  journal: "Nature"
+  volume: "652 (8112)"
+  pages: "1393–1404"
+  doi: "10.1038/s41586-026-10299-9"
+  pubmed: "41922775"
+
+- year: 2025
+  title: "The dopaminergic effects of esketamine are mediated by a dual mechanism involving glutamate and opioid receptors"
+  authors: "A Rizzo, MZ Garçon-Poca, A Essmann, AJ Souza, M Michaelides, F Ciruela, J Bonaventura"
+  journal: "Molecular Psychiatry"
+  volume: "30 (8)"
+  pages: "3443–3454"
+  doi: "10.1038/s41380-025-02931-3"
+  pubmed: "39972056"
+
+- year: 2025
+  title: "Cocaine chemogenetics blunts drug-seeking by synthetic physiology"
+  authors: "JL Gomez, CJ Magnus, J Bonaventura, et al., SM Sternson"
+  journal: "Nature"
+  volume: "646 (8085)"
+  pages: "746–753"
+  doi: "10.1038/s41586-025-09427-8"
+  pubmed: "40866713"
+
+- year: 2025
+  title: "Redefining ketamine pharmacology for antidepressant action: Synergistic NMDA and opioid receptor interactions?"
+  authors: "MR Levinstein, RC Budinich, J Bonaventura, AF Schatzberg, CA Zarate Jr, M Michaelides"
+  journal: "American Journal of Psychiatry"
+  volume: "182 (3)"
+  pages: "247–258"
+  doi: "10.1176/appi.ajp.20240378"
+  pubmed: "39810555"
+  type: "Review"
+
+- year: 2025
+  title: "Dopamine dynamics in chronic pain: music-induced, sex-dependent, behavioral effects in mice"
+  authors: "M Flores-García, Á Flores, E Aso, P Otero-López, F Ciruela, S Videla, J Grau-Sánchez, A Rodríguez-Fornells, J Bonaventura, V Fernández-Dueñas"
+  journal: "Pain Reports"
+  volume: "10 (1)"
+  pages: "e1205"
+  doi: "10.1097/PR9.0000000000001205"
+  pubmed: "39664710"
+
+- year: 2024
+  title: "A combination of Δ9-tetrahydrocannabinol and cannabidiol modulates glutamate dynamics in the hippocampus of an animal model of Alzheimer's disease"
+  authors: "N Sánchez-Fernández, L Gómez-Acero, A Castañé, A Adell, L Campa, J Bonaventura, et al., E Aso"
+  journal: "Neurotherapeutics"
+  volume: "21 (5)"
+  pages: "e00439"
+  doi: "10.1016/j.neurot.2024.e00439"
+  pubmed: "39232876"
+
+- year: 2023
+  title: "Expression of the excitatory opsin ChRERα can be traced longitudinally in rat and nonhuman primate brains with PET imaging"
+  authors: "J Bonaventura, MA Boehm, HP Jedema, et al., M Michaelides"
+  journal: "Science Translational Medicine"
+  volume: "15 (706)"
+  pages: "eadd1014"
+  doi: "10.1126/scitranslmed.add1014"
+  pubmed: "37494470"
+
+- year: 2023
+  title: "In vivo photopharmacology with light-activated opioid drugs"
+  authors: "SP McClain, X Ma, DA Johnson, et al., M Banghart"
+  journal: "Neuron"
+  volume: "111 (24)"
+  pages: "3926–3940.e10"
+  doi: "10.1016/j.neuron.2023.09.017"
+  pubmed: "37848025"
+
+- year: 2023
+  title: "Mu opioid receptor activation mediates (S)-ketamine reinforcement in rats: Implications for abuse liability"
+  authors: "MR Levinstein, ML Carlton, T Di Ianni, et al., J Bonaventura, M Michaelides"
+  journal: "Biological Psychiatry"
+  volume: "93 (12)"
+  pages: "1118–1126"
+  doi: "10.1016/j.biopsych.2022.12.019"
+  pubmed: "36841701"
+
+- year: 2023
+  title: "In vivo photopharmacology with a caged mu opioid receptor agonist drives rapid changes in behavior"
+  authors: "X Ma, DA Johnson, XJ He, AE Layden, SP McClain, JC Yung, A Rizzo, J Bonaventura, M Banghart"
+  journal: "Nature Methods"
+  volume: "20 (5)"
+  pages: "682–685"
+  doi: "10.1038/s41592-023-01819-w"
+  pubmed: "36973548"
+
+- year: 2023
+  title: "Essential role of P-glycoprotein in the mechanism of action of oliceridine"
+  authors: "E Ventriglia, A Rizzo, JL Gomez, et al., J Bonaventura, M Michaelides"
+  journal: "Neuropsychopharmacology"
+  volume: "48 (5)"
+  pages: "831–842"
+  doi: "10.1038/s41386-022-01507-x"
+  pubmed: "36434081"
+
+- year: 2022
+  title: "Target deconvolution studies of (2R,6R)-hydroxynorketamine: An elusive search"
+  authors: "J Bonaventura, JL Gomez, ML Carlton, et al., M Michaelides"
+  journal: "Molecular Psychiatry"
+  volume: "27 (10)"
+  pages: "4144–4156"
+  doi: "10.1038/s41380-022-01673-w"
+  pubmed: "35768639"
+
+- year: 2022
+  title: "The SARS-CoV-2 spike protein binds and modulates estrogen receptors"
+  authors: "O Solis, AR Beccari, D Iaconis, C Talarico, CA Ruiz-Bedoya, et al., J Bonaventura, M Michaelides"
+  journal: "Science Advances"
+  volume: "8 (48)"
+  pages: "eadd4150"
+  doi: "10.1126/sciadv.add4150"
+  pubmed: "36449624"
+
+- year: 2021
+  title: "Pharmacological and behavioral divergence of ketamine enantiomers: Implications for abuse liability"
+  authors: "J Bonaventura, S Lam, M Carlton, et al., M Michaelides"
+  journal: "Molecular Psychiatry"
+  volume: "26 (11)"
+  pages: "6704–6722"
+  doi: "10.1038/s41380-021-01093-2"
+  pubmed: "33859356"
+
+- year: 2019
+  title: "Ultrapotent chemogenetics for research and potential clinical applications"
+  authors: "CJ Magnus, PH Lee, J Bonaventura, et al., SM Sternson"
+  journal: "Science"
+  volume: "364 (6436)"
+  pages: "eaav5282"
+  doi: "10.1126/science.aav5282"
+  pubmed: "30872534"
+
+- year: 2019
+  title: "High-potency ligands for DREADD imaging and activation in rodents and monkeys"
+  authors: "J Bonaventura, MAG Eldridge, F Hu, et al., M Michaelides"
+  journal: "Nature Communications"
+  volume: "10"
+  pages: "4627"
+  doi: "10.1038/s41467-019-12236-z"
+  pubmed: "31604917"
+
+- year: 2019
+  title: "Opioid-galanin receptor heteromers mediate the dopaminergic effects of opioids"
+  authors: "NS Cai, C Quiroz, J Bonaventura, et al., S Ferré"
+  journal: "Journal of Clinical Investigation"
+  volume: "129 (7)"
+  pages: "2730–2744"
+  doi: "10.1172/JCI126912"
+  pubmed: "30913037"
+
+- year: 2017
+  title: "Chemogenetics revealed: DREADD occupancy and activation via converted clozapine"
+  authors: "JL Gomez, J Bonaventura, W Lesniak, et al., M Michaelides"
+  journal: "Science"
+  volume: "357 (6350)"
+  pages: "503–507"
+  doi: "10.1126/science.aan2475"
+  pubmed: "28774929"
+
+- year: 2017
+  title: "Key role of the dopamine D4 receptor in the modulation of corticostriatal glutamatergic neurotransmission"
+  authors: "J Bonaventura, C Quiroz, NS Cai, M Rubinstein, G Tanda, S Ferré"
+  journal: "Science Advances"
+  volume: "3 (1)"
+  pages: "e1601631"
+  doi: "10.1126/sciadv.1601631"
+  pubmed: "28097219"
+
+- year: 2015
+  title: "Allosteric interactions between agonists and antagonists within the adenosine A2A receptor-dopamine D2 receptor heterotetramer"
+  authors: "J Bonaventura, G Navarro, V Casadó-Anguera, et al., S Ferré"
+  journal: "Proceedings of the National Academy of Sciences"
+  volume: "112 (27)"
+  pages: "E3609–E3618"
+  doi: "10.1073/pnas.1507704112"
+  pubmed: "26100888"
