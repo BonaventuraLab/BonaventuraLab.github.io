@@ -449,8 +449,3 @@ main { min-height: 60vh; }
   opacity: 0.65;
   text-decoration: none;
 }
-.person-links .strava-icon {
-  display: block;
-  width: 20px;
-  height: 20px;
-}
