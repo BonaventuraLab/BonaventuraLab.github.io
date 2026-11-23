@@ -169,3 +169,23 @@ main{min-height:60vh}
   .footer-inner{padding:30px 22px;grid-template-columns:1fr}
   .copyright{grid-column:auto}
 }
+
+.site-logo {
+  display: block;
+  width: 190px;
+  height: auto;
+  max-height: 65px;
+  object-fit: contain;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 700px) {
+  .site-logo {
+    width: 155px;
+    max-height: 55px;
+  }
+}
