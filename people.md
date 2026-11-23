@@ -42,10 +42,7 @@ intro: Meet the researchers and students behind our work.
 
 {% if member.strava %}
   <a href="{{ member.strava }}" class="icon-link" target="_blank" rel="noopener noreferrer" aria-label="Strava profile" title="Strava">
-    <svg class="strava-icon" viewBox="0 0 24 24" aria-hidden="true">
-      <path fill="#FC4C02" d="M15.3 14.2 12.1 8.1H8.9L2.5 20.4h6.4l1.6-3.1-1.6-3.1H7.3l3.2-6.1 3.2 6.1h-3.2l-1.6 3.1h6.4l1.6-3.1z"/>
-      <path fill="#FC4C02" d="m18.5 14.2-1.6 3.1h-3.2l1.6 3.1h3.2l3.2-6.2z"/>
-    </svg>
+    <img src="{{ '/assets/images/strava-logo.svg' | relative_url }}" alt="">
   </a>
 {% endif %}
 </div>
@@ -94,10 +91,7 @@ We are grateful to all former members and collaborators who have contributed to 
 
  {% if member.strava %}
   <a href="{{ member.strava }}" class="icon-link" target="_blank" rel="noopener noreferrer" aria-label="Strava profile" title="Strava">
-    <svg class="strava-icon" viewBox="0 0 24 24" aria-hidden="true">
-      <path fill="#FC4C02" d="M15.3 14.2 12.1 8.1H8.9L2.5 20.4h6.4l1.6-3.1-1.6-3.1H7.3l3.2-6.1 3.2 6.1h-3.2l-1.6 3.1h6.4l1.6-3.1z"/>
-      <path fill="#FC4C02" d="m18.5 14.2-1.6 3.1h-3.2l1.6 3.1h3.2l3.2-6.2z"/>
-    </svg>
+    <img src="{{ '/assets/images/strava-logo.svg' | relative_url }}" alt="">
   </a>
 {% endif %}
 </div>
