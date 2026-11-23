@@ -12,7 +12,7 @@ intro: Selected publications from the Bonaventura Lab and our collaborators.
   {% assign pub_year = pub.year | strip %}
   {% if pub_year != "" and pub_year != current_year %}
     {% assign current_year = pub_year %}
-    <h2 class="year-heading">{{ current_year }}</h2>
+<h2 class="year-heading">{{ current_year }}</h2>
   {% endif %}
   <article class="publication">
     <h3>{{ pub.title }}</h3>
