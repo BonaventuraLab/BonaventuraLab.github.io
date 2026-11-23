@@ -420,3 +420,32 @@ main { min-height: 60vh; }
   display: inline-block;
 }
 
+/* Profile icon links */
+
+.person-links {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.person-links .icon-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  transition: opacity 0.2s ease;
+}
+
+.person-links .icon-link img {
+  display: block;
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+.person-links .icon-link:hover {
+  opacity: 0.65;
+  text-decoration: none;
+}
