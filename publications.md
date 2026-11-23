@@ -17,7 +17,8 @@ intro: Selected publications from the Bonaventura Lab and our collaborators.
   <article class="publication">
     <h3>{{ pub.title }}</h3>
     <p>{{ pub.authors }}</p>
-    <p><em>{{ pub.journal }}</em>{% if pub.volume %}, {{ pub.volume }}{% endif %}{% if pub.pages %}, {{ pub.pages }}{% endif %}.</p>
+    <p><em>{{ pub.journal }}</em>{% if pub.volume %}, {{ pub.volume }}{% endif %}{% if pub.pages %}, {{ pub.pages }}{% endif %}.</p> 
+     {% if pub.type %}  <span class="publication-type">{{ pub.type }}</span>{% endif %}
     <div class="publication-links">
       {% if pub.doi %}<a href="https://doi.org/{{ pub.doi }}">DOI</a>{% endif %}
       {% if pub.pubmed %}<a href="{{ pub.pubmed }}">PubMed</a>{% endif %}
