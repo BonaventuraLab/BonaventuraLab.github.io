@@ -126,8 +126,11 @@ p{margin:.5rem 0 1rem}
   }
 }
 
-@media (max-width: 700px) {
-  .header-inner {
+@media (max-width: 900px) {
+.header-inner {
+  max-width: var(--max);
+  margin: auto;
+  padding: 22px 28px;  .header-inner {
     padding: 14px 20px;
   }
 
