@@ -42,16 +42,16 @@ members:
 
 
 alumni:
-  - name: Cassandre Corvo, PhD
+  - name: Cassandre Corvo, PharmD,  PhD
     initials: CC
     role: Former Postdoctoral Researcher
     order: 1
-    bio:
+    bio: Cassandre holds a PharmD (2022) with a specialization in Industrial Pharmacy and Research, and a PhD in Pharmacology and Toxicology (2025). She is particularly interested in the mechanisms underlying the development of psychiatric disorders, with a view to drug development (neuropharmacology). During her postdoctoral position in the team, she continued her work on the corticosterone-induced model of depression (CORT model) and on ketamine. Trained in fiber photometry, she investigated how dopamine is affected in depression and whether ketamine, can modulate this neurotransmitter. She is currently a postdoctoral fellow at CRNL - NEUROCAMPUS Michel Jouvet - Centre de Recherche en Neurosciences de Lyon. Outside the lab, she divides her time between her pets and creative activities.
     orcid:
     scholar:
     website:
 
-  - name: Caitlin Crook
+  - name: Caitlin Crook, PhD
     initials: CC
     role: Former Visiting PhD Fellow
     order: 2
@@ -60,7 +60,7 @@ alumni:
     scholar:
     website:
 
-  - name: Adriana de Souza
+  - name: Adriana de Souza, PhD
     initials: AdS
     role: Former Visiting PhD Fellow
     order: 3
