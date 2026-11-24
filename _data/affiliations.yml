@@ -1,6 +1,7 @@
-- name: University of Barcelona
+- name: Universitat of Barcelona
   url: https://www.ub.edu/
-- name: IDIBELL
-  url: https://idibell.cat/
-- name: UBNeuro
-  url: https://www.ub.edu/ubneuro/
+- name: Neuropharmacology & Pain @ Institut de Neurociències (UB)
+  url: https://www.neurociencies.ub.edu/research-group/neuropharmacology-and-pain/
+- name: Neuropharmacology & Pain @ IDIBELL
+  url: https://idibell.cat/en/research/neuroscience-area/neuroscience-program/neuropharmacology-and-pain-2/
+
