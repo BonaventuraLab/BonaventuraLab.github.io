@@ -1,59 +1,24 @@
----
-layout: default
----
-<section class="hero">
-  <div class="hero-banner">
-    <img src="{{ '/assets/images/hero-workflow.jpg' | relative_url }}" alt="Overview of behavioral testing, PET and circuit mapping, and fiber photometry in the lab">
-  </div>
-
-  <div class="hero-copy">
-    <p class="eyebrow">NEUROPHARMACOLOGY · SYSTEMS NEUROSCIENCE · BEHAVIOR</p>
-    <h1>Understanding how neurochemistry shapes behavior.</h1>
-    <p class="hero-lead">We investigate how neurotransmitter systems and neural circuits interact to shape brain function, motivated behavior, pain, and responses to drugs.</p>
-    <div class="hero-actions">
-      <a class="button-link" href="{{ '/research/' | relative_url }}">Explore our research <span>→</span></a>
-      <a class="text-link" href="{{ '/publications/' | relative_url }}">Publications →</a>
-    </div>
-  </div>
-</section>
-
-<section class="section">
-  <div class="section-title-row">
-    <div><p class="eyebrow">FROM THE LAB</p><h2>Latest news</h2></div>
-    <a class="text-link" href="{{ '/news/' | relative_url }}">All news →</a>
-  </div>
-  <div class="news-preview-grid">
-    {% for post in site.posts limit:3 %}
-    <article class="news-preview">
-      <p class="eyebrow">{{ post.date | date: "%d %B %Y" }}{% if post.category %} · {{ post.category }}{% endif %}</p>
-      <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
-      <p>{{ post.excerpt | strip_html | truncate: 150 }}</p>
-    </article>
-    {% else %}
-    <p class="muted">News and updates from the lab will appear here.</p>
-    {% endfor %}
-  </div>
-</section>
-
-<section class="section section-intro">
-  <div class="section-heading">
-    <p class="eyebrow">ABOUT THE LAB</p>
-    <h2>From molecular mechanisms to behavior.</h2>
-  </div>
-  <div class="section-copy">
-    <p>Our work focuses on the pharmacology and function of neurotransmitter systems, particularly dopamine and opioid signaling. We aim to understand how physiological and pathological brain states influence neurochemical signaling and, in turn, behavioral responses.</p>
-    <p>We combine molecular, circuit, behavioral, and imaging approaches to address these questions.</p>
-  </div>
-</section>
-
 <section class="section section-tinted">
   <div class="section-title-row">
-    <div><p class="eyebrow">WHAT WE DO</p><h2>Research</h2></div>
+    <div>
+      <p class="eyebrow">WHAT WE DO</p>
+      <h2>Research</h2>
+    </div>
     <a class="text-link" href="{{ '/research/' | relative_url }}">All research areas →</a>
   </div>
-  <div class="research-grid">
+
+  <div
+    class="research-grid"
+    id="research-rotating-grid"
+    data-total="{{ site.data.research | size }}"
+    aria-live="polite"
+  >
     {% for item in site.data.research %}
-    <a class="research-card research-card--media" href="{{ item.url | default: '/research/' | relative_url }}">
+    <a
+      class="research-card research-card--media{% if forloop.index > 3 %} is-hidden{% endif %}"
+      href="{{ item.url | default: '/research/' | relative_url }}"
+      data-index="{{ forloop.index0 }}"
+    >
       {% if item.image %}
       <img
         class="research-card__bg"
@@ -76,15 +41,6 @@ layout: default
   </div>
 </section>
 
-<section class="section section-dark">
-  <div>
-    <p class="eyebrow">OPEN SCIENCE</p>
-    <h2>Tools and resources for the research community.</h2>
-    <p>Explore software, analysis workflows, and other resources shared by the lab.</p>
-    <a class="button-link button-light" href="{{ '/resources/' | relative_url }}">Explore resources <span>→</span></a>
-  </div>
-</section>
-
 <style>
   .research-grid {
     display: grid;
@@ -103,7 +59,15 @@ layout: default
     color: #ffffff;
     background-color: #18344A;
     text-decoration: none;
-    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    transition: transform 0.25s ease, box-shadow 0.25s ease, opacity 0.35s ease;
+  }
+
+  .research-card--media.is-hidden {
+    display: none;
+  }
+
+  .research-card--media.is-fading {
+    opacity: 0.35;
   }
 
   .research-card--media:hover {
@@ -204,3 +168,76 @@ layout: default
     }
   }
 </style>
+
+<script>
+  (function () {
+    const grid = document.getElementById("research-rotating-grid");
+    if (!grid) return;
+
+    const cards = Array.from(grid.querySelectorAll(".research-card--media"));
+    const visibleCount = 3;
+    const intervalMs = 4500; // Change to adjust rotation speed (in ms)
+
+    if (cards.length <= visibleCount) return;
+    if (window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      return;
+    }
+
+    let startIndex = 0;
+    let timer = null;
+
+    function renderWindow() {
+      const activeIndices = new Set();
+      for (let i = 0; i < visibleCount; i++) {
+        activeIndices.add((startIndex + i) % cards.length);
+      }
+
+      cards.forEach((card, idx) => {
+        const shouldShow = activeIndices.has(idx);
+        card.classList.toggle("is-hidden", !shouldShow);
+      });
+
+      // Reorder DOM nodes so visible cards sit cleanly in slots 1..3
+      activeIndices.forEach((idx) => {
+        grid.appendChild(cards[idx]);
+      });
+      cards.forEach((card, idx) => {
+        if (!activeIndices.has(idx)) {
+          grid.appendChild(card);
+        }
+      });
+    }
+
+    function rotateNext() {
+      const currentlyVisible = cards.filter((c) => !c.classList.contains("is-hidden"));
+      currentlyVisible.forEach((c) => c.classList.add("is-fading"));
+
+      window.setTimeout(() => {
+        startIndex = (startIndex + 1) % cards.length;
+        renderWindow();
+        const nextVisible = cards.filter((c) => !c.classList.contains("is-hidden"));
+        nextVisible.forEach((c) => c.classList.remove("is-fading"));
+      }, 200);
+    }
+
+    function startTimer() {
+      stopTimer();
+      timer = window.setInterval(rotateNext, intervalMs);
+    }
+
+    function stopTimer() {
+      if (timer) {
+        window.clearInterval(timer);
+        timer = null;
+      }
+    }
+
+    grid.addEventListener("mouseenter", stopTimer);
+    grid.addEventListener("mouseleave", startTimer);
+    grid.addEventListener("focusin", stopTimer);
+    grid.addEventListener("focusout", startTimer);
+
+    renderWindow();
+    startTimer();
+  })();
+</script>
