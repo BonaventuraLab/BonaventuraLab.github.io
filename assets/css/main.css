@@ -471,3 +471,17 @@ main { min-height: 60vh; }
   opacity: 0.65;
   text-decoration: none;
 }
+
+/* Individual post featured image */
+
+.post-featured-image {
+  margin: 0 0 2rem;
+}
+
+.post-featured-image img {
+  display: block;
+  width: 100%;
+  max-height: 520px;
+  object-fit: cover;
+  border-radius: 10px;
+}
