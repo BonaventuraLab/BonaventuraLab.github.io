@@ -1,3 +1,4 @@
+
 ---
 layout: page
 title: News
@@ -8,6 +9,11 @@ intro: Updates, publications, events, and life in the lab.
 <div class="news-list">
 {% for post in site.posts %}
   <article class="news-item">
+    {% if post.image %}
+      <a href="{{ post.url | relative_url }}" class="news-item-image-link">
+        <img src="{{ post.image | relative_url }}" alt="{{ post.image_alt | default: post.title | strip_html | escape }}" class="news-item-image">
+      </a>
+    {% endif %}
     <p class="eyebrow">{{ post.date | date: "%d %B %Y" }}{% if post.category %} · {{ post.category }}{% endif %}</p>
     <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
     <p>{{ post.excerpt | strip_html | strip_newlines }}</p>
