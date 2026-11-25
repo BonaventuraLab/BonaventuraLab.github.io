@@ -3,7 +3,7 @@ layout: post
 title: "<span style='color: #f07855;'>New preprint:</span> Disentangling tonic and phasic dopamine in fiber photometry"
 date: 2026-11-23
 category: Publications
-image: \assets\images\photsvi-cover.png
+image: \assets\images\photosvi-cover.png
 ---
 
 We are pleased to share a new preprint introducing **PhotoSVI**, a statistical framework for disentangling tonic and phasic dopamine signals in fiber photometry recordings.
