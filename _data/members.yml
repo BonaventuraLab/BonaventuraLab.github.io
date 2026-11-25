@@ -40,6 +40,15 @@ members:
     website:
     photo: /assets/images/ZG-photo.png
 
+  - name: Constantine Papoutsis
+    initials: CP
+    role: Master's Student
+    order: 5
+    bio: Constantine holds a Bachelor's degree in Psychological Science from Canterbury Christ Church University and is currently completing a Master's degree in Behaviour and Cognition at the University of Barcelona. He is interested in the neurobiological pathways involved in pain, mood disorders, and stress-related disorders, as well as how pharmacotherapy can help alleviate these conditions. Outside the lab, he enjoys swimming and cooking.
+    orcid: 
+    scholar:
+    website:
+    photo: /assets/images/CP-photo.png
 
 alumni:
   - name: Cassandre Corvo, PharmD,  PhD
