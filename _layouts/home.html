@@ -19,32 +19,36 @@ layout: default
 
 <section class="section">
   <div class="section-title-row">
-    <div><p class="eyebrow">FROM THE LAB</p><h2>Latest news</h2></div>
+    <div>
+      <p class="eyebrow">FROM THE LAB</p>
+      <h2>Latest news</h2>
+    </div>
     <a class="text-link" href="{{ '/news/' | relative_url }}">All news →</a>
   </div>
-<div class="news-preview-grid news-preview-grid--media">
-  {% for post in site.posts limit:3 %}
-  <a class="news-preview-card" href="{{ post.url | relative_url }}">
-    {% if post.image %}
-    <img
-      class="news-preview-card__bg"
-      src="{{ post.image | relative_url }}"
-      alt="{{ post.image_alt | default: post.title | strip_html | escape }}"
-      loading="lazy"
-    >
-    {% endif %}
-    <div class="news-preview-card__scrim" aria-hidden="true"></div>
-    <div class="news-preview-card__content">
-      <p class="eyebrow">{{ post.date | date: "%d %B %Y" }}{% if post.category %} · {{ post.category }}{% endif %}</p>
-      <h3>{{ post.title }}</h3>
-      <p>{{ post.excerpt | strip_html | truncate: 150 }}</p>
-      <span class="news-preview-card__link">Read more →</span>
-    </div>
-  </a>
-  {% else %}
-  <p class="muted">News and updates from the lab will appear here.</p>
-  {% endfor %}
-</div>
+
+  <div class="news-preview-grid news-preview-grid--media">
+    {% for post in site.posts limit:3 %}
+    <a class="news-preview-card" href="{{ post.url | relative_url }}">
+      {% if post.image %}
+      <img
+        class="news-preview-card__bg"
+        src="{{ post.image | relative_url }}"
+        alt="{{ post.image_alt | default: post.title | strip_html | escape }}"
+        loading="lazy"
+      >
+      {% endif %}
+      <div class="news-preview-card__scrim" aria-hidden="true"></div>
+      <div class="news-preview-card__content">
+        <p class="eyebrow">{{ post.date | date: "%d %B %Y" }}{% if post.category %} · {{ post.category }}{% endif %}</p>
+        <h3>{{ post.title }}</h3>
+        <p>{{ post.excerpt | strip_html | truncate: 140 }}</p>
+        <span class="news-preview-card__link">Read more →</span>
+      </div>
+    </a>
+    {% else %}
+    <p class="muted">News and updates from the lab will appear here.</p>
+    {% endfor %}
+  </div>
 </section>
 
 <section class="section section-intro">
@@ -60,9 +64,13 @@ layout: default
 
 <section class="section section-tinted">
   <div class="section-title-row">
-    <div><p class="eyebrow">WHAT WE DO</p><h2>Research</h2></div>
+    <div>
+      <p class="eyebrow">WHAT WE DO</p>
+      <h2>Research</h2>
+    </div>
     <a class="text-link" href="{{ '/research/' | relative_url }}">All research areas →</a>
   </div>
+
   <div
     class="research-grid"
     id="research-rotating-grid"
@@ -98,242 +106,13 @@ layout: default
 </section>
 
 <section class="section section-dark">
-  <div>
+  <div class="section-dark__inner">
     <p class="eyebrow">OPEN SCIENCE</p>
     <h2>Tools and resources for the research community.</h2>
     <p>Explore software, analysis workflows, and other resources shared by the lab.</p>
     <a class="button-link button-light" href="{{ '/resources/' | relative_url }}">Explore resources <span>→</span></a>
   </div>
 </section>
-
-<style>
-  .research-grid {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 1.25rem;
-  }
-
-  .research-card--media {
-    position: relative;
-    aspect-ratio: 1 / 1;
-    overflow: hidden;
-    border-radius: 12px;
-    display: flex;
-    align-items: flex-end;
-    padding: 1.5rem;
-    color: #ffffff;
-    background-color: #18344A;
-    text-decoration: none;
-    transition: transform 0.25s ease, box-shadow 0.25s ease, opacity 0.35s ease;
-  }
-
-  .research-card--media.is-hidden {
-    display: none;
-  }
-
-  .research-card--media.is-fading {
-    opacity: 0.35;
-  }
-
-  .research-card--media:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 12px 24px rgba(12, 27, 40, 0.18);
-  }
-
-  .research-card--media:focus-visible {
-    outline: 3px solid #1E788A;
-    outline-offset: 3px;
-  }
-
-  .research-card__bg {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.35s ease;
-    z-index: 0;
-  }
-
-  .research-card--media:hover .research-card__bg {
-    transform: scale(1.04);
-  }
-
-  .research-card__scrim {
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(
-      to top,
-      rgba(12, 27, 40, 0.90) 0%,
-      rgba(12, 27, 40, 0.55) 55%,
-      rgba(12, 27, 40, 0.18) 100%
-    );
-    z-index: 1;
-  }
-
-  .research-card__content {
-    position: relative;
-    z-index: 2;
-    width: 100%;
-  }
-
-  .research-card__meta {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 0.35rem;
-  }
-
-  .research-card--media .card-number {
-    font-size: 0.75rem;
-    font-weight: 700;
-    letter-spacing: 0.08em;
-    color: #7AD1E2;
-  }
-
-  .research-card__arrow {
-    font-size: 0.95rem;
-    color: #7AD1E2;
-    opacity: 0.75;
-    transition: transform 0.25s ease, opacity 0.25s ease;
-  }
-
-  .research-card--media:hover .research-card__arrow {
-    opacity: 1;
-    transform: translateX(3px);
-  }
-
-  .research-card--media h3 {
-    margin: 0 0 0.45rem;
-    font-size: 1.2rem;
-    line-height: 1.25;
-    color: #ffffff;
-  }
-
-  .research-card--media p {
-    margin: 0;
-    font-size: 0.9rem;
-    line-height: 1.45;
-    color: rgba(255, 255, 255, 0.9);
-  }
-
-  @media (max-width: 900px) {
-    .research-grid {
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-  }
-
-  @media (max-width: 560px) {
-    .research-grid {
-      grid-template-columns: 1fr;
-    }
-
-    .research-card--media {
-      aspect-ratio: 4 / 3;
-    }
-  }
-  /* Homepage news cards */
-
-.news-preview-grid--media {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 1.25rem;
-}
-
-.news-preview-card {
-  position: relative;
-  aspect-ratio: 4 / 3;
-  overflow: hidden;
-  border-radius: 12px;
-  display: flex;
-  align-items: flex-end;
-  padding: 1.5rem;
-  color: #ffffff;
-  background-color: #18344A;
-  text-decoration: none;
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
-}
-
-.news-preview-card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 12px 24px rgba(12, 27, 40, 0.18);
-  text-decoration: none;
-}
-
-.news-preview-card__bg {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.35s ease;
-  z-index: 0;
-}
-
-.news-preview-card:hover .news-preview-card__bg {
-  transform: scale(1.04);
-}
-
-.news-preview-card__scrim {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    to top,
-    rgba(12, 27, 40, 0.94) 0%,
-    rgba(12, 27, 40, 0.65) 55%,
-    rgba(12, 27, 40, 0.18) 100%
-  );
-  z-index: 1;
-}
-
-.news-preview-card__content {
-  position: relative;
-  z-index: 2;
-  width: 100%;
-}
-
-.news-preview-card .eyebrow {
-  color: #7AD1E2;
-  font-size: 0.72rem;
-  margin-bottom: 0.5rem;
-}
-
-.news-preview-card h3 {
-  margin: 0 0 0.5rem;
-  font-size: 1.15rem;
-  line-height: 1.3;
-  color: #ffffff;
-}
-
-.news-preview-card p:not(.eyebrow) {
-  margin: 0 0 0.8rem;
-  font-size: 0.88rem;
-  line-height: 1.45;
-  color: rgba(255, 255, 255, 0.9);
-}
-
-.news-preview-card__link {
-  font-size: 0.85rem;
-  font-weight: 700;
-  color: #7AD1E2;
-}
-
-@media (max-width: 900px) {
-  .news-preview-grid--media {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-}
-
-@media (max-width: 560px) {
-  .news-preview-grid--media {
-    grid-template-columns: 1fr;
-  }
-
-  .news-preview-card {
-    aspect-ratio: 4 / 3;
-  }
-}
-</style>
 
 <script>
   (function () {
