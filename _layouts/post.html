@@ -6,7 +6,18 @@ layout: default
   <h1>{{ page.title }}</h1>
   {% if page.subtitle %}<p class="page-intro">{{ page.subtitle }}</p>{% endif %}
 </section>
+
 <article class="content-wrap prose post-content">
+  {% if page.image %}
+  <figure class="post-featured-image">
+    <img
+      src="{{ page.image | relative_url }}"
+      alt="{{ page.image_alt | default: page.title | strip_html | escape }}"
+    >
+  </figure>
+  {% endif %}
+
   {{ content }}
+
   <p><a class="text-link" href="{{ '/news/' | relative_url }}">← Back to news</a></p>
 </article>
