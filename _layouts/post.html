@@ -10,23 +10,23 @@ intro: Updates, publications, events, and life in the lab.
     max-width: 920px;
   }
 
-  .news-item {
+  .news-list .news-item {
     padding: 28px 0;
     border-bottom: 1px solid var(--line);
   }
 
-  .news-item:first-child {
+  .news-list .news-item:first-child {
     padding-top: 8px;
   }
 
-  .news-item.has-image {
+  .news-list .news-item.has-image {
     display: grid;
     grid-template-columns: 280px minmax(0, 1fr);
     gap: 28px;
     align-items: center;
   }
 
-  .news-item-image-link {
+  .news-list .news-item-image-link {
     display: block;
     border: 1px solid var(--line);
     border-radius: 8px;
@@ -36,12 +36,12 @@ intro: Updates, publications, events, and life in the lab.
     transition: border-color 0.2s ease, transform 0.2s ease;
   }
 
-  .news-item-image-link:hover {
+  .news-list .news-item-image-link:hover {
     border-color: var(--accent-dark);
     transform: translateY(-2px);
   }
 
-  .news-item-image {
+  .news-list .news-item-image {
     display: block;
     width: 100%;
     height: 100%;
@@ -52,18 +52,18 @@ intro: Updates, publications, events, and life in the lab.
     margin-bottom: 6px;
   }
 
-  .news-item h2 {
+  .news-list .news-item h2 {
     font-size: 1.45rem;
     line-height: 1.25;
     margin: 0 0 8px;
   }
 
-  .news-item h2 a {
+  .news-list .news-item h2 a {
     color: var(--ink);
     text-decoration: none;
   }
 
-  .news-item h2 a:hover {
+  .news-list .news-item h2 a:hover {
     color: var(--accent-dark);
   }
 
@@ -75,7 +75,7 @@ intro: Updates, publications, events, and life in the lab.
   }
 
   @media (max-width: 700px) {
-    .news-item.has-image {
+    .news-list .news-item.has-image {
       grid-template-columns: 1fr;
       gap: 16px;
     }
