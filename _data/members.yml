@@ -3,27 +3,28 @@ members:
     initials: JB
     role: Principal Investigator
     order: 1
-    bio: I'm an Associate Professor at the University of Barcelona. My research is broadly focused on understanding how changes at the molecular, neurochemical, and pharmacological levels translate into changes in brain function and behavior. I'm particularly interested in the complexity of neurotransmitter systems, receptor pharmacology and brain circuitry, and in how these different pieces interact to shape what we do. Outside the lab I enjoy guitars, good food and trail running.
+    bio: Jordi is an Associate Professor at the University of Barcelona. His research is broadly focused on understanding how changes at the molecular, neurochemical, and pharmacological levels translate into changes in brain function and behavior. He's particularly interested in the complexity of neurotransmitter systems, receptor pharmacology and brain circuitry, and in how these different pieces interact to shape what we do. Outside the lab he enjoys guitars, good food and trail running.
     orcid: https://orcid.org/0000-0002-4745-0151
     scholar: https://scholar.google.com/citations?user=x0hVzyQAAAAJ&hl=ca
     website: 
     strava: https://www.strava.com/athletes/184578692
-    phto:
+    photo:
 
   - name: Arianna Rizzo
     initials: AR
     role: PhD Student
     order: 2
-    bio:
+    bio: Arianna holds a Bachelor's degree in Biology from the University of Palermo and a Master's degree in Cellular and Molecular Biology from the University of Turin (Italy). Her research focuses on the neurobiological mechanisms underlying the effects of ketamine, investigating how they modulate dopamine and glutamate signaling in brain regions involved in reward and motivation. Beyond the lab, Arianna is passionate about learning new languages and enjoys expressing herself through salsa dancing.
     orcid: https://orcid.org/0000-0003-4404-194X
     scholar:
     website:
+    photo: /assets/images/AR-photo.jpeg
 
   - name: Amelie Essmann
     initials: AE
     role: PhD Student
     order: 3
-    bio: Amelie has a BSc in biology from Saint Peter’s University in Jersey City and a Master's in neuroscience with molecular neurobiology from Stockholm University. In the Bonaventura lab, she is doing her PhD, currently exploring the neural circuitry involved in chronic pain and the role of opioids. Amelie is mostly performing fiber photometry, opto- and chemogenetics to decipher neural circuitry. Outside the lab, Amelie enjoys doing sports and baking.
+    bio: Amelie has a BSc in biology from Saint Peter’s University in Jersey City (USA) and a Master's in neuroscience with molecular neurobiology from Stockholm University (Sweden). In the Bonaventura lab, she is doing her PhD, currently exploring the neural circuitry involved in chronic pain and the role of opioids. Amelie is mostly performing fiber photometry, opto- and chemogenetics to decipher neural circuitry. Outside the lab, Amelie enjoys doing sports and baking.
     orcid: https://orcid.org/0009-0008-9972-8187
     scholar:
     website:
